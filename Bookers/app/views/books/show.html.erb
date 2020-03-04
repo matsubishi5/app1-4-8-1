@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+<p><scan>Title:</scan><%= @book.title %></p>
+<p><scan>Body:</scan><%= @book.body %></p>
+
+<%= link_to "Edit",edit_book_path(@book) %>
+|
+<%= link_to "Back",books_path %>
